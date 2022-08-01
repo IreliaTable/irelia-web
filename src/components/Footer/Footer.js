@@ -31,9 +31,9 @@ export default function Footer() {
             <Grid item xs={10}>
               <Grid container>
                 <Grid item xs={2} className={classes.footerBody}>
-                  <b className={classes.title2}>Irelia</b>
-                  <p className={classes.body2} onClick={() => window.open("https://github.com/Irelia", "_target")}>About Us</p>
-                  <p className={classes.body2} onClick={() => window.open("https://github.com/Irelia", "_target")}>Terms</p>
+                  <b className={classes.title2}>IreliaTable</b>
+                  <p className={classes.body2} onClick={() => window.open("https://github.com/IreliaTable", "_target")}>About Us</p>
+                  <p className={classes.body2} onClick={() => window.open("https://github.com/IreliaTable", "_target")}>Terms</p>
                 </Grid>
                 <Grid item xs={2} className={classes.footerBody}>
                   <b className={classes.title2}>GuinsooLab</b>
@@ -62,7 +62,7 @@ export default function Footer() {
           {/* divider */}
           <Divider className={classes.appDivider} />
           <Typography className={classes.copyright}>
-            © 2021-2022 Irelia & GuinsoooLab
+            © 2021-2022 IreliaTable & GuinsoooLab
           </Typography>
         </Container>
       </div>
