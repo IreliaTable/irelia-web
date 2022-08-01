@@ -1,6 +1,6 @@
 {
   "name": "irelia",
-  "homepage": "git@github.com:IreliaTable/irelia-web.git",
+  "homepage": "https://ireliatable.github.io/irelia-web/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
