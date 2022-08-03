@@ -4,7 +4,6 @@ import {
   Toolbar,
 } from "@material-ui/core";
 import Button from "@material-ui/core/Button";
-import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
 import GitHubIcon from '@material-ui/icons/GitHub';
 
 // styles
@@ -41,9 +40,8 @@ export default function Header() {
         </p>
         <div>
           <Button
-            variant={"contained"}
+            variant={"outlined"}
             className={classes.buttonDownload}
-            endIcon={<ArrowRightAltIcon />}
             onClick={() => window.open("https://github.com/IreliaTable/irelia/releases", "_target")}
           >
             Download
