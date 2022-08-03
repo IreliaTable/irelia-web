@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "86932b15612e011bbc6f050417a5ecec",
+    "revision": "65e83579b41a91fbf0c4a9de87c3398c",
     "url": "/irelia-web/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/irelia-web/static/js/2.b787232c.chunk.js"
   },
   {
-    "revision": "e0b86feae149c2b50329",
-    "url": "/irelia-web/static/js/main.2a8c99b5.chunk.js"
+    "revision": "47f12a15f1d7c064be7d",
+    "url": "/irelia-web/static/js/main.d9a910ab.chunk.js"
   },
   {
     "revision": "67a74ea3e12940ab48ff",
