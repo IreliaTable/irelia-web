@@ -1,15 +1,27 @@
 {
   "files": {
-    "main.js": "/irelia-web/static/js/main.d9a910ab.chunk.js",
-    "main.js.map": "/irelia-web/static/js/main.d9a910ab.chunk.js.map",
+    "main.js": "/irelia-web/static/js/main.c33c6b17.chunk.js",
+    "main.js.map": "/irelia-web/static/js/main.c33c6b17.chunk.js.map",
     "runtime~main.js": "/irelia-web/static/js/runtime~main.0443ccf8.js",
     "runtime~main.js.map": "/irelia-web/static/js/runtime~main.0443ccf8.js.map",
-    "static/js/2.b787232c.chunk.js": "/irelia-web/static/js/2.b787232c.chunk.js",
-    "static/js/2.b787232c.chunk.js.map": "/irelia-web/static/js/2.b787232c.chunk.js.map",
+    "static/js/2.6c2a389f.chunk.js": "/irelia-web/static/js/2.6c2a389f.chunk.js",
+    "static/js/2.6c2a389f.chunk.js.map": "/irelia-web/static/js/2.6c2a389f.chunk.js.map",
     "index.html": "/irelia-web/index.html",
-    "precache-manifest.ce20ad1e27a87342d771985c2d1752d5.js": "/irelia-web/precache-manifest.ce20ad1e27a87342d771985c2d1752d5.js",
+    "precache-manifest.15073a0d8a9225b27164b8d57c139846.js": "/irelia-web/precache-manifest.15073a0d8a9225b27164b8d57c139846.js",
     "service-worker.js": "/irelia-web/service-worker.js",
+    "static/media/brand-follow.png": "/irelia-web/static/media/brand-follow.cf6f307f.png",
+    "static/media/github.svg": "/irelia-web/static/media/github.2d7ee4e2.svg",
+    "static/media/guinsoo-ecosystem-irelia.png": "/irelia-web/static/media/guinsoo-ecosystem-irelia.661d75fd.png",
+    "static/media/irelia-blog-dbt-cloud-metric-card-1.png": "/irelia-web/static/media/irelia-blog-dbt-cloud-metric-card-1.4a92425d.png",
+    "static/media/irelia-blog-dbt-cloud-metric-card.png": "/irelia-web/static/media/irelia-blog-dbt-cloud-metric-card.0fdcfd2a.png",
+    "static/media/irelia-blog-long-form-workflow-rc.png": "/irelia-web/static/media/irelia-blog-long-form-workflow-rc.07d8018e.png",
+    "static/media/irelia-footer.svg": "/irelia-web/static/media/irelia-footer.916c8765.svg",
+    "static/media/irelia-kda-datasheet-rc.png": "/irelia-web/static/media/irelia-kda-datasheet-rc.f01413a4.png",
+    "static/media/irelia-rc-modern-data-stack.png": "/irelia-web/static/media/irelia-rc-modern-data-stack.268ae474.png",
+    "static/media/irelia-top-trends-22-rc.png": "/irelia-web/static/media/irelia-top-trends-22-rc.085d7f78.png",
     "static/media/irelia.svg": "/irelia-web/static/media/irelia.9737edce.svg",
-    "static/media/possible_sheet.png": "/irelia-web/static/media/possible_sheet.a17f8741.png"
+    "static/media/top-left-second.png": "/irelia-web/static/media/top-left-second.7fb10640.png",
+    "static/media/top-right-second.png": "/irelia-web/static/media/top-right-second.4ab66c85.png",
+    "static/media/top-right-third.png": "/irelia-web/static/media/top-right-third.a0ac6c38.png"
   }
 }
