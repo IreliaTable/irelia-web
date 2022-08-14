@@ -1,70 +1,100 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
+import Divider from "@material-ui/core/Divider";
 
-// images
-import FF1 from "../../../images/ff_1.svg"
-import FF2 from "../../../images/ff_2.svg"
-import FF3 from "../../../images/ff_3.svg"
-import FF4 from "../../../images/ff_4.svg"
+import Title from "../../../components/Title";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    backgroundColor: "white",
   },
-  gridContent: {
-    padding: theme.spacing(2),
+  gridContentLeft: {
     color: "white",
-    backgroundColor: theme.palette.primary.main,
-    "&:hover": {
-      color: theme.palette.text.primary,
-      backgroundColor: "white",
-    }
-  },
-  img: {
     display: "flex",
-    justifyContent: "center",
     alignItems: "center",
-    marginTop: theme.spacing(5),
+  },
+  gridContentRight: {
+    color: "white",
   },
   cardBody: {
     textAlign: "center",
   },
+  titleA: {
+    fontSize: 24,
+    fontWeight: 600,
+  },
   title: {
-    fontSize: 22,
+    fontSize: 18,
     fontWeight: 600,
   },
   content: {
     fontSize: 16,
-    marginBottom: theme.spacing(5),
+    marginBottom: theme.spacing(2),
   },
+  driver: {
+    backgroundColor: theme.palette.text.hint,
+    marginBottom: theme.spacing(5),
+  }
 }));
 
 const ConfigData = [
   {
     id: 1,
-    logo: FF1,
-    title: "High Performance",
-    content: "Ensure predictable low latency for your most demanding applications.",
+    title: "Streamline your data",
+    color: "#53fa87",
+    content: [
+      {
+        title: "SIMPLE DATABASE BUILDER",
+        content: "Unify your spreadsheets in one beautiful relational structure",
+      },
+      {
+        title: "WORK TOGETHER",
+        content: "Share data in part or in full, and collaborate in real-time",
+      },
+      {
+        title: "HIGH-PRODUCTIVITY LAYOUTS",
+        content: "Lay out your screen in a way that makes sense for your data",
+      }
+    ],
   },
   {
     id: 2,
-    logo: FF2,
-    title: "Mission‑Critical Reliability",
-    content: "Ensure that your data is always correct, safe and continuously available.",
+    title: "Control your data",
+    color: "#fa7ada",
+    content: [
+      {
+        title: "GRANULAR ACCESS CONTROL",
+        content: "Control over who sees what — down to each row and column",
+      },
+      {
+        title: "LINK SHARING",
+        content: "Share limited views of only relevant data with third parties",
+      },
+      {
+        title: "OWN YOUR DATA",
+        content: "Rest easy with open source software, automatic backups, and no data lock-in",
+      }
+    ],
   },
   {
     id: 3,
-    logo: FF3,
-    title: "Cypher & Bolt Compatible",
-    content: "Get started in seconds and embrace a rich ecosystem of tools.",
-  },
-  {
-    id: 4,
-    logo: FF4,
-    title: "Fair & Transparent Pricing",
-    content: "Always know what you will pay for with memory-based pricing in the cloud.",
+    title: "Drill into your data",
+    color: "#53cbff",
+    content: [
+      {
+        title: "MORE THAN A SPREADSHEET",
+        content: "See records as customizable data cards, and attach relevant images and files",
+      },
+      {
+        title: "VISUALIZE YOUR DATA",
+        content: "Create dashboard charts and summaries to see the big picture",
+      },
+      {
+        title: "DYNAMIC REPORTS",
+        content: "Make charts that update dynamically as you drill into data",
+      }
+    ],
   },
 ];
 
@@ -73,26 +103,44 @@ export default function Feature2() {
 
   return (
     <div className={classes.root}>
-        <Grid container>
-          {
-            ConfigData.map(item => (
+      <Title
+        name="The World Deserves A Better Tool Than Spreadsheets"
+        tip=""
+      />
+        {
+          ConfigData.map(item => (
+            <Grid container key={item.id}>
+              <Grid item xs={2} />
               <Grid
                 item
                 xs={3}
-                key={item.id}
-                className={classes.gridContent}
+                className={classes.gridContentLeft}
               >
-                <div className={classes.img}>
-                  <img src={item.logo} height={88} alt={item.id} />
-                </div>
-                <div className={classes.cardBody}>
-                  <p className={classes.title}>{item.title}</p>
-                  <p className={classes.content}>{item.content}</p>
-                </div>
+                <p className={classes.titleA} style={{color: item.color}}>{item.title}</p>
               </Grid>
-            ))
-          }
-        </Grid>
+              <Grid item xs={1} />
+              <Grid
+                item
+                xs={4}
+                className={classes.gridContentRight}
+              >
+                {item.content.map(it => (
+                  <div key={it.title}>
+                    <p className={classes.title}>{it.title}</p>
+                    <p className={classes.content}>{it.content}</p>
+                  </div>
+                ))}
+              </Grid>
+              <Grid item xs={2} />
+
+              <Grid item xs={2} />
+              <Grid item xs={8}>
+                <Divider className={classes.driver} />
+              </Grid>
+              <Grid item xs={2} />
+            </Grid>
+          ))
+        }
     </div>
   );
 }

@@ -28,16 +28,32 @@ export default function Header() {
           alt="glab-logo"
           onClick={() => window.open("#/app/home", "_self")}
         />
-        <p className={classes.subTitle}>
-          / GuinsooLab Irelia
-        </p>
-        <div className={classes.grow} />
         <p
           className={classes.subTitle}
           onClick={() => window.open("https://ciusji.gitbook.io/irelia/", "_target")}
         >
-          Documentation
+          Overview
         </p>
+        <p
+          className={classes.subTitle}
+          onClick={() => window.open("https://ciusji.gitbook.io/irelia/ecosystem/ecosystem", "_target")}
+        >
+          Ecosystem
+        </p>
+        <p
+          className={classes.subTitle}
+          onClick={() => window.open("https://ciusji.gitbook.io/irelia/solutions/solutions", "_target")}
+        >
+          Solutions
+        </p>
+        <p
+          className={classes.subTitle}
+          onClick={() => window.open("https://ciusji.gitbook.io/irelia/appendix/faq", "_target")}
+        >
+          FAQ
+        </p>
+
+        <div className={classes.grow} />
         <div>
           <Button
             variant={"outlined"}

@@ -4,7 +4,7 @@ export default makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     display: "flex",
-    backgroundColor: "#2d303a",
+    backgroundColor: theme.palette.background.default,
     color: fade("#fff", 0.9),
     paddingTop: theme.spacing(3),
   },
@@ -45,7 +45,7 @@ export default makeStyles((theme) => ({
   title2: {
     fontSize: 16,
     marginBottom: theme.spacing(2),
-    color: "white",
+    color: theme.palette.primary.main,
     fontWeight: 800,
   },
   body2: {
@@ -93,9 +93,11 @@ export default makeStyles((theme) => ({
   },
   input: {
     marginTop: theme.spacing(2),
-    backgroundColor: "white",
-    padding: theme.spacing(1),
+    padding: "4px 8px",
     borderRadius: 4,
+    border: "1px solid",
+    borderColor: theme.palette.primary.main,
+    color: theme.palette.primary.main,
   },
   button: {
     width: 150,
@@ -104,10 +106,10 @@ export default makeStyles((theme) => ({
     marginBottom: theme.spacing(2),
     backgroundColor: theme.palette.primary.main,
     color: "white",
+    fontWeight: 800,
     textTransform: "Capitalize",
     "&:hover": {
       backgroundColor: theme.palette.primary.main,
-      fontWeight: 800,
       cursor: "pointer",
     },
   },

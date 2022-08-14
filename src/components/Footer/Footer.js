@@ -52,7 +52,7 @@ export default function Footer() {
                 <Grid item xs={5} className={classes.footerBody}>
                   <b className={classes.title2}>Subscribe</b>
                   <p className={classes.body3}>Stay up to date with our latest news.</p>
-                  <InputBase className={classes.input} placeholder={"Enter email address"} />
+                  <InputBase className={classes.input} placeholder={"email@address.com"} />
                   <Button className={classes.button}>Subscribe</Button>
                 </Grid>
                 <Grid item xs={1} className={classes.footerBody} />

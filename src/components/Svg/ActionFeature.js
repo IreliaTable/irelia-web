@@ -6,11 +6,8 @@ const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
     width: "100vw",
-    height: "45vh",
-    backgroundColor: "white",
-    backgroundImage: 'url(' + require('../../images/bg-secondary.svg') + ')',
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
+    height: "65vh",
+    backgroundColor: "#3564ff",
     color: "white",
   },
 }));
