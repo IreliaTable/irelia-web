@@ -1,15 +1,15 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ffb2421faa968bd2dbe09e1edb38ab89",
+    "revision": "89ff71eb83718e519f7226b49151bc57",
     "url": "/irelia-web/index.html"
   },
   {
-    "revision": "0879bb694191395353ba",
-    "url": "/irelia-web/static/js/2.6c2a389f.chunk.js"
+    "revision": "86acad178c728aecb726",
+    "url": "/irelia-web/static/js/2.a0e7daf2.chunk.js"
   },
   {
-    "revision": "9572362f6e811badbf97",
-    "url": "/irelia-web/static/js/main.c33c6b17.chunk.js"
+    "revision": "174741cab275e9afc3fe",
+    "url": "/irelia-web/static/js/main.88039d85.chunk.js"
   },
   {
     "revision": "67a74ea3e12940ab48ff",
@@ -28,12 +28,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/irelia-web/static/media/guinsoo-ecosystem-irelia.661d75fd.png"
   },
   {
-    "revision": "4a92425d81c40b1e35eaffa32b646ae2",
-    "url": "/irelia-web/static/media/irelia-blog-dbt-cloud-metric-card-1.4a92425d.png"
+    "revision": "8c98e6cd2723007c86a0752451f0275b",
+    "url": "/irelia-web/static/media/irelia-action.8c98e6cd.svg"
   },
   {
-    "revision": "0fdcfd2a6ffd01b96c2518adb646027a",
-    "url": "/irelia-web/static/media/irelia-blog-dbt-cloud-metric-card.0fdcfd2a.png"
+    "revision": "b0ba3823af8de58be9d720a78ffea8b1",
+    "url": "/irelia-web/static/media/irelia-blog-dbt-cloud-metric-card-1.b0ba3823.png"
+  },
+  {
+    "revision": "263192ac5572ed0ba6799c2ce627ceb7",
+    "url": "/irelia-web/static/media/irelia-blog-dbt-cloud-metric-card.263192ac.png"
   },
   {
     "revision": "07d8018e2590684a497cf30ad24c5469",
