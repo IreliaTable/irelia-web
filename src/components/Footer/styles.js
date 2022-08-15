@@ -94,7 +94,7 @@ export default makeStyles((theme) => ({
   input: {
     marginTop: theme.spacing(2),
     padding: "4px 8px",
-    borderRadius: 4,
+    borderRadius: 0,
     border: "1px solid",
     borderColor: theme.palette.primary.main,
     color: theme.palette.primary.main,
@@ -107,6 +107,7 @@ export default makeStyles((theme) => ({
     backgroundColor: theme.palette.primary.main,
     color: "white",
     fontWeight: 800,
+    borderRadius: 0,
     textTransform: "Capitalize",
     "&:hover": {
       backgroundColor: theme.palette.primary.main,

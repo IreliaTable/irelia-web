@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
   gridContentLeft: {
     color: "white",
     display: "flex",
-    alignItems: "center",
+    flexDirection: "column",
   },
   gridContentRight: {
     color: "white",
@@ -23,6 +23,10 @@ const useStyles = makeStyles((theme) => ({
   titleA: {
     fontSize: 24,
     fontWeight: 600,
+  },
+  descA: {
+    marginBottom: theme.spacing(2),
+    fontSize: 20,
   },
   title: {
     fontSize: 18,
@@ -42,6 +46,7 @@ const ConfigData = [
   {
     id: 1,
     title: "Streamline your data",
+    desc: "Unify your spreadsheets in one beautiful relational structure",
     color: "#53fa87",
     content: [
       {
@@ -61,6 +66,7 @@ const ConfigData = [
   {
     id: 2,
     title: "Control your data",
+    desc: "Control over who sees what — down to each row and column",
     color: "#fa7ada",
     content: [
       {
@@ -80,6 +86,7 @@ const ConfigData = [
   {
     id: 3,
     title: "Drill into your data",
+    desc: "See records as customizable data cards, and attach relevant images and files",
     color: "#53cbff",
     content: [
       {
@@ -116,6 +123,7 @@ export default function Feature2() {
                 xs={3}
                 className={classes.gridContentLeft}
               >
+                <p className={classes.descA} style={{color: item.color}}>{item.desc}</p>
                 <p className={classes.titleA} style={{color: item.color}}>{item.title}</p>
               </Grid>
               <Grid item xs={1} />

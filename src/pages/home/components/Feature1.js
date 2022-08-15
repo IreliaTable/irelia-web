@@ -77,7 +77,7 @@ const useStyles = makeStyles(theme => ({
 export default function Feature1() {
   const classes = useStyles();
 
-  const desc = "With Irelia, it’s easy to answer complex questions using the power of machine learning. Reveal insights, monitor metrics, and share and collaborate to enable the best business decisions.";
+  const desc = "Irelia is a modern data modeling and transformation tool on top of your existing data sources to let you work with data using a spreadsheet-like interface. It makes your data work easy."
 
   return (
     <div className={classes.root}>
