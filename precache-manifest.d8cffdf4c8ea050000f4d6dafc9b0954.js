@@ -1,15 +1,15 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "89ff71eb83718e519f7226b49151bc57",
+    "revision": "0c2eff9f92b4c87b9481f76433de131c",
     "url": "/irelia-web/index.html"
   },
   {
-    "revision": "86acad178c728aecb726",
-    "url": "/irelia-web/static/js/2.a0e7daf2.chunk.js"
+    "revision": "7a47da6e6f95dfd2ba89",
+    "url": "/irelia-web/static/js/2.afcc2cde.chunk.js"
   },
   {
-    "revision": "174741cab275e9afc3fe",
-    "url": "/irelia-web/static/js/main.88039d85.chunk.js"
+    "revision": "76e174e61079278aa949",
+    "url": "/irelia-web/static/js/main.90acda60.chunk.js"
   },
   {
     "revision": "67a74ea3e12940ab48ff",
@@ -22,10 +22,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2d7ee4e2eefe9058af6e401be84e8013",
     "url": "/irelia-web/static/media/github.2d7ee4e2.svg"
-  },
-  {
-    "revision": "661d75fd30a880578d4feb997caf1ea7",
-    "url": "/irelia-web/static/media/guinsoo-ecosystem-irelia.661d75fd.png"
   },
   {
     "revision": "8c98e6cd2723007c86a0752451f0275b",
