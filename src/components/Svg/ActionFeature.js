@@ -32,6 +32,8 @@ const useStyles = makeStyles(theme => ({
     color: theme.palette.text.primary,
     fontSize: 24,
     paddingLeft: theme.spacing(4),
+    paddingTop: theme.spacing(2),
+    paddingBottom: theme.spacing(2),
   },
   p4: {
     paddingLeft: theme.spacing(4),

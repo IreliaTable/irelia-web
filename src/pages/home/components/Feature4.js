@@ -12,7 +12,6 @@ import IreliaBLogImg6 from "../../../images/irelia-top-trends-22-rc.png"
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
     height: "75vh",
     display: "flex",
     justifyContent: "center",
@@ -38,25 +37,49 @@ export default function Feature4() {
         <Grid item xs={10}>
           <Grid container justify={"space-between"}>
             <Grid item className={classes.imgItem}>
-              <img src={IreliaBLogImg1} alt="irelia-blog" />
+              <img
+                src={IreliaBLogImg1}
+                alt="irelia-blog"
+                onClick={() => window.open("https://ciusji.gitbook.io/irelia/solutions/solutions", "_target")}
+              />
             </Grid>
             <Grid item className={classes.imgItem}>
-              <img src={IreliaBLogImg2} alt="irelia-blog" />
+              <img
+                src={IreliaBLogImg2}
+                alt="irelia-blog"
+                onClick={() => window.open("https://ciusji.gitbook.io/irelia/solutions/solutions", "_target")}
+              />
             </Grid>
             <Grid item className={classes.imgItem}>
-              <img src={IreliaBLogImg3} alt="irelia-blog" />
+              <img
+                src={IreliaBLogImg3}
+                alt="irelia-blog"
+                onClick={() => window.open("https://ciusji.gitbook.io/irelia/solutions/solutions", "_target")}
+              />
             </Grid>
           </Grid>
 
           <Grid container justify={"space-between"} style={{marginTop: 50}}>
             <Grid item className={classes.imgItem}>
-              <img src={IreliaBLogImg4} alt="irelia-blog" />
+              <img
+                src={IreliaBLogImg4}
+                alt="irelia-blog"
+                onClick={() => window.open("https://ciusji.gitbook.io/irelia/solutions/solutions", "_target")}
+              />
             </Grid>
             <Grid item className={classes.imgItem}>
-              <img src={IreliaBLogImg5} alt="irelia-blog" />
+              <img
+                src={IreliaBLogImg5}
+                alt="irelia-blog"
+                onClick={() => window.open("https://ciusji.gitbook.io/irelia/solutions/solutions", "_target")}
+              />
             </Grid>
             <Grid item className={classes.imgItem}>
-              <img src={IreliaBLogImg6} alt="irelia-blog" />
+              <img
+                src={IreliaBLogImg6}
+                alt="irelia-blog"
+                onClick={() => window.open("https://ciusji.gitbook.io/irelia/solutions/solutions", "_target")}
+              />
             </Grid>
           </Grid>
         </Grid>
