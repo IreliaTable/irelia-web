@@ -48,9 +48,15 @@ export default function Header() {
         </p>
         <p
           className={classes.subTitle}
+          onClick={() => window.open("https://ciusji.gitbook.io/irelia/templates/personal", "_target")}
+        >
+          Templates
+        </p>
+        <p
+          className={classes.subTitle}
           onClick={() => window.open("https://ciusji.gitbook.io/irelia/appendix/faq", "_target")}
         >
-          FAQ
+          FAQs
         </p>
 
         <div className={classes.grow} />

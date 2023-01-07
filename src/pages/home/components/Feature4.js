@@ -2,29 +2,77 @@ import React from "react";
 import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
 
-import IreliaBLogImg1 from "../../../images/irelia-blog-dbt-cloud-metric-card-1.png"
-import IreliaBLogImg2 from "../../../images/irelia-blog-dbt-cloud-metric-card.png"
-import IreliaBLogImg3 from "../../../images/irelia-blog-long-form-workflow-rc.png"
-import IreliaBLogImg4 from "../../../images/irelia-kda-datasheet-rc.png"
-import IreliaBLogImg5 from "../../../images/irelia-rc-modern-data-stack.png"
-import IreliaBLogImg6 from "../../../images/irelia-top-trends-22-rc.png"
+import IreliaBLogImg1 from "../../../images/irelia-blog-with-guinsoolab.png"
+import IreliaBLogImg2 from "../../../images/irelia-blog-with-dbt.png"
+import IreliaBLogImg3 from "../../../images/irelia-blog-with-workflow.png"
+import IreliaBLogImg4 from "../../../images/irelia-blog-datasheet.png"
+import IreliaBLogImg5 from "../../../images/irelia-blog-templates.png"
+import IreliaBLogImg6 from "../../../images/irelia-blog-trends-years.png"
 
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    height: "75vh",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#ffffff",
+    paddingBottom: theme.spacing(5),
   },
   imgItem: {
     display: "flex",
+    flexDirection: "column",
     justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: theme.palette.background.default,
-  }
+    alignItems: "start",
+    marginTop: theme.spacing(5),
+  },
+  title: {
+    fontWeight: 600,
+    color: "#235dff",
+  },
+  desc: {
+    fontWeight: 600,
+    color: theme.palette.background.default,
+  },
 }));
+
+const blogs = [
+  {
+    img: IreliaBLogImg1,
+    link: 'https://ciusji.gitbook.io/irelia/blogs/blogs',
+    title: 'Irelia with GuinsooLab',
+    desc: 'Quickstart with Irelia & GuinsooLab',
+  },
+  {
+    img: IreliaBLogImg2,
+    link: 'https://ciusji.gitbook.io/irelia/blogs/blogs',
+    title: 'Build Data With Irelia & DBT',
+    desc: 'Build data with Irelia & dbt',
+  },
+  {
+    img: IreliaBLogImg3,
+    link: 'https://ciusji.gitbook.io/irelia/blogs/blogs',
+    title: 'Task Workflow',
+    desc: 'Build your workflow in Irelia',
+  },
+  {
+    img: IreliaBLogImg4,
+    link: 'https://ciusji.gitbook.io/irelia/blogs/blogs',
+    title: 'Data Sheet Explore',
+    desc: 'Explore your data in Irelia',
+  },
+  {
+    img: IreliaBLogImg5,
+    link: 'https://ciusji.gitbook.io/irelia/blogs/blogs',
+    title: 'Irelia Templates',
+    desc: 'Tutorials with Irelia templates',
+  },
+  {
+    img: IreliaBLogImg6,
+    link: 'https://ciusji.gitbook.io/irelia/blogs/blogs',
+    title: 'Irelia Top Trends',
+    desc: 'Irelia top trends in data and analytics',
+  }
+]
 
 export default function Feature4() {
   const classes = useStyles();
@@ -32,58 +80,26 @@ export default function Feature4() {
   return (
     <div className={classes.root}>
       <Grid container>
-        <Grid item xs={1}>
+        <Grid item md={1} lg={2}>
         </Grid>
-        <Grid item xs={10}>
+        <Grid item md={10} lg={8}>
           <Grid container justify={"space-between"}>
-            <Grid item className={classes.imgItem}>
-              <img
-                src={IreliaBLogImg1}
-                alt="irelia-blog"
-                onClick={() => window.open("https://ciusji.gitbook.io/irelia/solutions/solutions", "_target")}
-              />
-            </Grid>
-            <Grid item className={classes.imgItem}>
-              <img
-                src={IreliaBLogImg2}
-                alt="irelia-blog"
-                onClick={() => window.open("https://ciusji.gitbook.io/irelia/solutions/solutions", "_target")}
-              />
-            </Grid>
-            <Grid item className={classes.imgItem}>
-              <img
-                src={IreliaBLogImg3}
-                alt="irelia-blog"
-                onClick={() => window.open("https://ciusji.gitbook.io/irelia/solutions/solutions", "_target")}
-              />
-            </Grid>
-          </Grid>
-
-          <Grid container justify={"space-between"} style={{marginTop: 50}}>
-            <Grid item className={classes.imgItem}>
-              <img
-                src={IreliaBLogImg4}
-                alt="irelia-blog"
-                onClick={() => window.open("https://ciusji.gitbook.io/irelia/solutions/solutions", "_target")}
-              />
-            </Grid>
-            <Grid item className={classes.imgItem}>
-              <img
-                src={IreliaBLogImg5}
-                alt="irelia-blog"
-                onClick={() => window.open("https://ciusji.gitbook.io/irelia/solutions/solutions", "_target")}
-              />
-            </Grid>
-            <Grid item className={classes.imgItem}>
-              <img
-                src={IreliaBLogImg6}
-                alt="irelia-blog"
-                onClick={() => window.open("https://ciusji.gitbook.io/irelia/solutions/solutions", "_target")}
-              />
-            </Grid>
+            {blogs.map(it => (
+              <Grid item md={4} lg={4} className={classes.imgItem} key={it.img}>
+                <img
+                  src={it.img}
+                  width={"90%"}
+                  alt="irelia-blog"
+                  onClick={() => window.open(it.link, "_target")}
+                />
+                <p className={classes.title}>{it.title.toUpperCase()}</p>
+                <p className={classes.desc}>{it.desc}</p>
+              </Grid>
+              )
+            )}
           </Grid>
         </Grid>
-        <Grid item xs={1}>
+        <Grid item md={1} lg={2}>
         </Grid>
       </Grid>
     </div>

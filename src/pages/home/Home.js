@@ -16,8 +16,8 @@ export default function Home() {
       <Feature1 />
       <Feature2 />
       {/*<Feature3 />*/}
-      <Feature4 />
       <ActionFeature />
+      <Feature4 />
       <Footer/>
     </div>
   );

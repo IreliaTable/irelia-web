@@ -9,8 +9,8 @@ export default makeStyles(theme => {
         easing: theme.transitions.easing.sharp,
         duration: theme.transitions.duration.leavingScreen,
       }),
-      backgroundColor: theme.palette.background.default,
-      color: "#ffffff",
+      backgroundColor: "#ffffff",
+      color: theme.palette.background.default,
     },
     toolbar: {
       paddingLeft: theme.spacing(2),
@@ -29,7 +29,7 @@ export default makeStyles(theme => {
     },
     subTitle: {
       width: 100,
-      color: "#ffffff",
+      color: theme.palette.background.default,
       fontSize: 15,
       "&:hover": {
         cursor: "pointer",
@@ -63,12 +63,17 @@ export default makeStyles(theme => {
       color: "#ffffff",
       backgroundColor: theme.palette.primary.main,
       borderColor: theme.palette.primary.main,
+      fontWeight: 800,
       paddingTop: 4,
       paddingBottom: 4,
       borderRadius: 0,
       paddingLeft: theme.spacing(3),
       paddingRight: theme.spacing(3),
       textTransform: "Capitalize",
+      "&:hover": {
+        color: theme.palette.primary.main,
+        background: "#ffffff",
+      }
     },
   });
 });

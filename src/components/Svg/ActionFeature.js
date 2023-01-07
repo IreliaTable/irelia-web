@@ -1,32 +1,35 @@
 import React from "react";
 import { makeStyles } from "@material-ui/styles";
 import Grid from "@material-ui/core/Grid";
-import { Card } from "@material-ui/core";
+import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
 import Button from "@material-ui/core/Button";
-import DoneIcon from '@material-ui/icons/Done';
 
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
     width: "100vw",
-    height: "90vh",
-    backgroundColor: "#ffffff",
-    backgroundImage: 'url(' + require('../../images/irelia-action.svg') + ')',
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
+    height: "60vh",
+    backgroundColor: "#3BE3B2",
     display: "flex",
     alignItems: "center",
+    justifyContent: "center",
   },
   mainContainer: {
-    color: "#ffffff",
+    color: theme.palette.background.default,
+  },
+  mainContent: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
   },
   p1: {
-    fontSize: 18,
-    fontWeight: 800,
+    fontSize: 48,
+    fontWeight: 500,
   },
   p2: {
-    fontSize: 36,
-    fontWeight: 600,
+    fontSize: 48,
+    fontWeight: 800,
   },
   p3: {
     color: theme.palette.text.primary,
@@ -46,35 +49,19 @@ const useStyles = makeStyles(theme => ({
       height: 30,
     }
   },
-  button1: {
-    paddingLeft: theme.spacing(4),
-    paddingRight: theme.spacing(4),
-    width: "100%"
-  },
-  button2: {
-    paddingLeft: theme.spacing(4),
-    paddingRight: theme.spacing(4),
-  },
-  buttonStyle1: {
-    paddingTop: theme.spacing(1),
-    paddingBottom: theme.spacing(1),
-    backgroundColor: "#3464ff",
+  quickStart: {
+    paddingLeft: theme.spacing(6),
+    paddingRight: theme.spacing(6),
+    paddingBottom: theme.spacing(2),
+    paddingTop: theme.spacing(2),
+    background: theme.palette.background.default,
+    fontSize: 18,
     color: "#ffffff",
-    borderRadius: 0,
-    marginTop: theme.spacing(2),
-    marginBottom: theme.spacing(1),
-    fontWeight: 800,
     "&:hover": {
-      backgroundColor: theme.palette.primary.main,
-    }
+      color: theme.palette.background.default,
+      background: "#ffffff",
+    },
   },
-  buttonStyle2: {
-    color: "#3464ff",
-    paddingTop: theme.spacing(1),
-    paddingBottom: theme.spacing(1),
-    marginBottom: theme.spacing(2),
-    fontWeight: 500,
-  }
 }));
 
 export default function ActionFeature() {
@@ -84,48 +71,18 @@ export default function ActionFeature() {
     <div className={classes.root}>
       <Grid container className={classes.mainContainer}>
         <Grid item xs={2} />
-        <Grid item xs={4}>
-          <p className={classes.p1}>THE SPROUTS PROGRAM</p>
-          <p className={classes.p2}>Build with an expert</p>
-        </Grid>
-        <Grid item xs={4}>
-          <Card elevation={8}>
-            <p className={classes.p3}>Book a free consultation</p>
-
-            <p className={classes.p4}>
-              <DoneIcon color={"primary"} />
-              Design for your needs
-            </p>
-            <p className={classes.p4}>
-              <DoneIcon color={"primary"} />
-              Plan your solution
-            </p>
-            <p className={classes.p4}>
-              <DoneIcon color={"primary"} />
-              Build with experts
-            </p>
-
-            <div className={classes.button1}>
-              <Button
-                variant={"contained"}
-                fullWidth
-                className={classes.buttonStyle1}
-                onClick={() => window.open("https://ciusji.gitbook.io/irelia/appendix/help")}
-              >
-                INQUIRE NOW
-              </Button>
-            </div>
-            <div className={classes.button2}>
-              <Button
-                variant={"text"}
-                fullWidth
-                className={classes.buttonStyle2}
-                onClick={() => window.open("https://ciusji.gitbook.io/irelia/appendix/help")}
-              >
-                Learn More
-              </Button>
-            </div>
-          </Card>
+        <Grid item xs={8} className={classes.mainContent}>
+          <p className={classes.p1}>Customers analyze data
+            <span className={classes.p2}>&nbsp; 80% faster</span>
+          </p>
+          <Button
+            variant={"text"}
+            className={classes.quickStart}
+            endIcon={<ArrowRightAltIcon />}
+            onClick={() => window.open("https://ciusji.gitbook.io/irelia/managing-documents/create-a-document", "_blank")}
+          >
+            START NOW
+          </Button>
         </Grid>
         <Grid item xs={2} />
       </Grid>
