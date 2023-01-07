@@ -47,7 +47,7 @@ const ConfigData = [
     id: 1,
     title: "Streamline your data",
     desc: "Unify your spreadsheets in one beautiful relational structure",
-    color: "#53fa87",
+    color: "#3BE3B2",
     content: [
       {
         title: "SIMPLE DATABASE BUILDER",

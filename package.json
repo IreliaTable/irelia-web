@@ -1,7 +1,7 @@
 {
   "name": "irelia",
   "homepage": "https://ireliatable.github.io/irelia-web/",
-  "version": "0.1.0",
+  "version": "1.2.0",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.3.0",
@@ -18,8 +18,8 @@
     "react-scripts": "3.0.1",
     "react-syntax-highlighter": "^11.0.2",
     "react-toastify": "^5.3.2",
-    "tinycolor2": "^1.4.1",
-    "typed.js": "^2.0.12"
+    "react-typed": "^1.2.0",
+    "tinycolor2": "^1.4.1"
   },
   "scripts": {
     "start": "react-scripts start",

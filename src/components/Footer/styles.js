@@ -126,5 +126,6 @@ export default makeStyles((theme) => ({
     width: "100%",
     color: theme.palette.text.hint,
     marginBottom: theme.spacing(2),
+    fontSize: 12,
   },
 }));

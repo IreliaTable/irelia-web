@@ -3,6 +3,7 @@ import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/styles";
 import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
+import Typed from "react-typed";
 
 import TopLeftImg from "../../../images/top-left-second.png";
 import TopRightImg1 from "../../../images/top-right-second.png";
@@ -35,7 +36,15 @@ const useStyles = makeStyles(theme => ({
     color: "#ffffff"
   },
   sloganHighlight: {
-    color: theme.palette.secondary.main
+    color: "#245dff"
+  },
+  slogan2Highlight: {
+    color: theme.palette.primary.main,
+  },
+  sloganTyped: {
+    marginLeft: theme.spacing(2),
+    fontSize: 48,
+    fontWeight: 600,
   },
   logoSloganBody: {
     fontSize: 18,
@@ -77,7 +86,12 @@ const useStyles = makeStyles(theme => ({
 export default function Feature1() {
   const classes = useStyles();
 
-  const desc = "Irelia is a modern data modeling and transformation tool on top of your existing data sources to let you work with data using a spreadsheet-like interface. It makes your data work easy."
+  const textLines = [
+    'organize data', 'analyze data', 'share data',
+  ];
+
+  const desc = "Irelia is a modern data modeling and transformation tool on top of your existing data sources to " +
+    "let you work with data using a spreadsheet-like interface. It makes your data work easy."
 
   return (
     <div className={classes.root}>
@@ -89,7 +103,14 @@ export default function Feature1() {
         <Grid item xs={6}>
           <div className={classes.leftPaper}>
             <div className={classes.logoSlogan}>
-              <span><b className={classes.sloganHighlight}>A modern</b><br/> relational spreadsheet</span>
+              <span>
+                <b className={classes.sloganHighlight}>A modern</b>
+                <i className={classes.sloganTyped}>
+                  <Typed strings={textLines} typeSpeed={40} backSpeed={10} loop />
+                </i>
+                <br/>
+                <span className={classes.slogan2Highlight}>relational spreadsheet</span>
+              </span>
             </div>
             <div className={classes.logoSloganBody}>
               <p>{desc}</p>
